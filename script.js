@@ -1,4 +1,4 @@
-// All possible characters for random passwords broken into 4 strings \\
+// All possible characters for random passwords -- broken into 4 strings \\
 var big = "QWERTYUIOPASDFGHJKLZXCVBNM"
 var little = "qwertyuiopasdfghjklzxcvbnm"
 var numbers = "1234567890"
@@ -43,7 +43,8 @@ if (length >= 8 && length <= 126){
             if (specialChar) {
                 passwordChars += special
                             }
-        
+
+// The for loop randomly selects a character from the passwordChars set and will repeat a number of 'length' times. \\   
         for ( var i = 0; i < length; i++) {
         randomPassword += passwordChars.charAt(Math.floor(Math.random() * passwordChars.length))};
             
@@ -51,6 +52,7 @@ if (length >= 8 && length <= 126){
 
         passwordText.value = randomPassword;}  
         
+// The foor loop will not run if they disrgard the character limits, and they will be alerted a message. \\
         else {
         alert("Please choose between 8 and 126 characters.")
             }}
