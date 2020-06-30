@@ -4,7 +4,7 @@ var little = "qwertyuiopasdfghjklzxcvbnm"
 var numbers = "1234567890"
         var numb = numbers.match(/\d/g);
         numbChar = numb.join("");
-var special = "`~!@#$%^&*()-_=+[{]};:'/?"
+var special = "`~!@#$%^&*()-_=+[{]};:'/?<>"
 
 // This variable targets the red button on the webpage \\
 var generateBtn = document.querySelector("#generate");
@@ -26,7 +26,7 @@ if (length >= 8 && length <= 126){
         let randomPassword = ""
 
 
-// these if statements track which answers the user gives and combines each respective character set together \\
+// These if statements track which answers the user gives and combines each respective character set together \\
 
             if (upperCase) {
                 passwordChars += big
